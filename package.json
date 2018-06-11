@@ -1,0 +1,35 @@
+{
+  "name": "ovais-malik-voiceover-website",
+  "version": "1.0.0",
+  "description": "This is a personal website of Ovais Malik",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesmarnielimpo/ovais.git"
+  },
+  "keywords": [
+    "ovais",
+    "malik",
+    "voiceover"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlesmarnielimpo/ovais/issues"
+  },
+  "homepage": "https://github.com/charlesmarnielimpo/ovais#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.4",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {
+    "pump": "^3.0.0"
+  }
+}
