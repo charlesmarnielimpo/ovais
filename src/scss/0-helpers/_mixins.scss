@@ -1,0 +1,89 @@
+@mixin social-links {
+  .social-media__link {
+    // flex-grow: 1;
+    padding-left: 1rem;
+
+    .social-media__icon {
+      width: auto;
+      padding: 3px;
+      text-align: center;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+
+    i {
+      color: $white;
+    }
+
+    .social-media__icon--facebook {
+      background-color: #4267b2;
+      &:hover {
+        background-color: darken(#4267b2, 10);
+      }
+    }
+
+    .social-media__icon--twitter {
+      background-color: #1da1f2;
+      &:hover {
+        background-color: darken(#1da1f2, 10);
+      }
+    }
+
+    .social-media__icon--linkedin {
+      background-color: #0073b1;
+      &:hover {
+        background-color: darken(#0073b1, 10);
+      }
+    }
+
+    .social-media__icon--instagram {
+      background-color: #d10869;
+      &:hover {
+        background-color: darken(#d10869, 10);
+      }
+    }
+
+    i.fab {
+      width: 25px;
+      height: 20px;
+    }
+  }
+}
+
+@mixin contact {
+  .contact {
+    margin-right: 25px !important;
+
+    @media only screen and (max-width: $breakpoint-xs) {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      margin-right: 0 !important;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 350px) {
+      flex-direction: column;
+      text-align: center;
+      margin-top: 10px;
+      margin-right: 0 !important;
+      padding: 0;
+    }
+
+    @media only screen and (max-width: 767px) {
+      margin-top: 10px !important;
+      margin-right: 0 !important;
+      padding: 0;
+    }
+
+    .contact__list {
+      &:last-child {
+        margin-left: 20px;
+
+        @media only screen and (max-width: $breakpoint-xs) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}

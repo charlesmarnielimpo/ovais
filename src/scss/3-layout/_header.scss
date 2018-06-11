@@ -1,0 +1,64 @@
+#header {
+  .active {
+    font-weight: bold;
+    color: $red;
+  }
+
+  .social-media__link, .contact {
+    display: flex;
+  }
+
+  .header__nav--is-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+    height: 50px;
+    padding: 10px 0 10px 0;
+
+    @media only screen and (max-width: $breakpoint-xs) {
+      flex-direction: column;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      height: auto;
+    }
+
+    ul {
+      margin: 0;
+    }
+
+    a {
+      color: inherit;
+      &:hover {
+        color: $dark-red;
+      }
+    }
+
+    li {
+      list-style: none;
+    }
+
+    @include social-links;
+
+    @include contact;
+  }
+
+  .header__nav--is-bottom {
+    img {
+      max-width: 100px;
+      width: 100%;
+    }
+    .nav-link {
+      margin: 0 20px;
+      color: inherit;
+      text-transform: uppercase;
+
+      @media only screen and (max-width: 991px) {
+        margin: 0;
+      }
+    }
+  }
+}
