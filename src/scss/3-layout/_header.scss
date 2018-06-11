@@ -16,14 +16,8 @@
     height: 50px;
     padding: 10px 0 10px 0;
 
-    @media only screen and (max-width: $breakpoint-xs) {
-      flex-direction: column;
-      height: auto;
-    }
-
-    @media only screen and (max-width: 767px) {
-      flex-direction: column;
-      height: auto;
+    @media only screen and (max-width: 532px) {
+      display: none;
     }
 
     ul {

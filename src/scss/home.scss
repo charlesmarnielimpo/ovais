@@ -1,3 +1,98 @@
 @import "0-helpers/_0-helpers";
 @import "1-base/_1-base";
-@import "3-layout/_3-layout"
+@import "3-layout/_3-layout";
+
+#hero-wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // height: 100vh;
+  height: 70vh;
+  overflow: hidden;
+  z-index: -1;
+
+  @media only screen and (max-width: 532px) {
+    height: auto;
+  }
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+    width: 100vw;
+  }
+
+  #video-content {
+    top: -100px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    height: 100vh;
+
+    @media only screen and (max-width: 320px) {
+      top: -35vh;
+    }
+
+    h1 {
+      font-family: "Poppins", "sans-serif";
+
+      @media only screen and (max-width: 532px) {
+        display: none;
+      }
+
+      @media only screen and (min-width: 533px) and (max-width: 766px) {
+        font-size: 2rem;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 3.25rem;
+      }
+
+      span {
+        color: $red;
+      }
+    }
+
+    p {
+      @media only screen and (max-width: 532px) {
+        display: none;
+      }
+
+      @media only screen and (min-width: 533px) and (max-width: 766px) {
+        font-size: 1.5rem;
+      }
+
+      @media only screen and (max-width: 767px) {
+        font-size: 2.25rem;
+      }
+    }
+
+    .video-control {
+      position: absolute;
+      top: 25%;
+      right: 5%;
+
+      @media only screen and (max-width: 320px) {
+        top: 38vh;
+      }
+
+      @media only screen and (min-width: 487px) and (max-width: 767px) {
+        top: 28vh;
+      }
+
+      i {
+        font-size: 2rem;
+
+        @media only screen and (max-width: 320px) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
