@@ -1,5 +1,6 @@
 @mixin social-links {
   .social-media__link {
+    display: flex;
     // flex-grow: 1;
     padding-left: 1rem;
 
@@ -52,6 +53,7 @@
 
 @mixin contact {
   .contact {
+    display: flex;
     margin-right: 25px !important;
 
     @media only screen and (max-width: $breakpoint-xs) {
@@ -84,6 +86,44 @@
           margin-left: 0;
         }
       }
+    }
+  }
+}
+
+@mixin heading-underline {
+  .headul {
+    margin: 30px auto 50px auto;
+
+    &:before {
+      content: " ";
+      width: 220px;
+      height: 2px;
+      background-color: $red;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &:after {
+      margin: 0 auto;
+      content: " ";
+      width: 60px;
+      height: 6px;
+      background-color: $red;
+      display: block;
+    }
+  }
+}
+
+@mixin brands {
+  .brand-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .image-wrapper {
+      max-width: 100px;
+      width: 100%;
+      margin: 10px 20px;
     }
   }
 }
