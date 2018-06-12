@@ -96,3 +96,68 @@
     }
   }
 }
+
+#audio-reel {
+  padding: 50px 0;
+  background-color: darken($dark-grey, 10);
+
+  .reel-controller {
+    color: $white;
+
+    .reel-controls {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 10px 15px;
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      margin: 10px 0 20px 0;
+    }
+
+    .author-time {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .controller {
+      i {
+       &:nth-child(2) {
+         margin: 0 15px;
+       }
+      }
+    }
+
+    .progress {
+      margin-top: 3px;
+      background-color: rgba(46, 46, 46, 0.4);
+
+      .progress-bar {
+        background-color: $red;
+      }
+    }
+  }
+
+  .reel-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+
+    .list-group-item {
+      background-color: transparent;
+      color: $white;
+      display: flex;
+      justify-content: space-between;
+      &:last-child {
+        justify-content: center;
+      }
+      &:hover {
+        color: $red;
+        cursor: pointer;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
