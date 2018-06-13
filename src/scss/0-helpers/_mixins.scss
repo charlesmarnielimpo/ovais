@@ -130,6 +130,12 @@
 }
 
 @mixin about {
+
+  img {
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
   li {
     list-style: none;
   }

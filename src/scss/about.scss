@@ -9,34 +9,18 @@
   background-color: lighten($grey, 10);
 
   @include about;
-
-  .headul {
-    &:before, &:after {
-      margin: 0;
-    }
-  }
 }
 
-#niches {
+#niche-studio {
   padding: 50px 0;
 
-  .headul {
-    &:before, &:after {
-      margin: 0 0 0 auto;
-    }
+  li {
+    list-style: none;
   }
 
-  @include image-wrapper;
-}
-
-#studio {
-  padding: 50px 0;
-
-  .headul {
-    &:before, &:after {
-      margin: 0;
+  .niche {
+    @media only screen and (max-width: 767px) {
+      margin-bottom: 40px;
     }
   }
-
-  @include image-wrapper;
 }
