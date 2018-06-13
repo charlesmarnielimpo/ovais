@@ -3,4 +3,8 @@
   text-align: center;
   background-color: $dark-grey;
   color: darken($white, 3);
+
+  p.small {
+    color: darken($grey, 10);
+  }
 }

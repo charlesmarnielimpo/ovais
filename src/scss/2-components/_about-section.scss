@@ -1,0 +1,45 @@
+%about-section {
+  img {
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+
+    span {
+      color: $red;
+    }
+  }
+
+  @extend .social-media__link;
+
+  .contact {
+    flex-direction: column;
+    padding-left: 0;
+    margin-top: 30px;
+    margin-right: 0 !important;
+
+    @media only screen and (max-width: 350px) {
+      text-align: left;
+      margin-top: 40px !important;
+    }
+
+    .contact__list {
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  @extend .social-media__link;
+
+  .social-media__link {
+    padding-left: 0;
+  }
+}

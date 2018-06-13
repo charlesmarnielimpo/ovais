@@ -1,0 +1,31 @@
+@charset 'utf-8';
+
+// 1. Configuration and helpers
+@import '0-abstracts/_variables';
+@import '0-abstracts/_functions';
+@import '0-abstracts/_mixins';
+
+// 2. Vendors
+// @import
+//   'vendor/_normalize';
+
+// 3. Base stuff
+@import '1-base/_base';
+@import '1-base/_fonts';
+@import '1-base/_typography';
+@import '1-base/_helpers';
+
+// 4. Layout-related sections
+@import '3-layout/_header';
+@import '3-layout/_footer';
+
+// 5. Components
+ @import '2-components/_wrapper-padding';
+ @import '2-components/_about-section';
+ @import '2-components/_social-links';
+
+// 6. Page-specific styles
+@import '4-pages/_home';
+@import '4-pages/_about';
+
+// 7. Themes

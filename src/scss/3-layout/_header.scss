@@ -4,10 +4,6 @@
     color: $red;
   }
 
-  .social-media__link, .contact {
-    display: flex;
-  }
-
   .header__nav--is-top {
     display: flex;
     align-items: center;
@@ -17,25 +13,18 @@
     padding: 10px 0 10px 0;
 
     @media only screen and (max-width: 532px) {
-      display: none;
+      display: none !important;
     }
 
     ul {
       margin: 0;
     }
 
-    a {
-      color: inherit;
-      &:hover {
-        color: $dark-red;
-      }
-    }
-
     li {
       list-style: none;
     }
 
-    @include social-links;
+    @extend .social-media__link;
 
     @include contact;
   }

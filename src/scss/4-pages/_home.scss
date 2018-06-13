@@ -1,7 +1,3 @@
-@import "0-helpers/_0-helpers";
-@import "1-base/_1-base";
-@import "3-layout/_3-layout";
-
 @include heading-underline;
 
 #hero-wrapper {
@@ -42,8 +38,6 @@
     }
 
     h1 {
-      font-family: "Poppins", "sans-serif";
-
       @media only screen and (max-width: 532px) {
         display: none;
       }
@@ -100,7 +94,7 @@
 }
 
 #audio-reel {
-  padding: 50px 0;
+  @extend %wrapper-padding;
   background-color: darken($dark-grey, 10);
 
   h1 {
@@ -178,14 +172,14 @@
 }
 
 #about {
-  padding: 50px 0;
+  @extend %wrapper-padding;
   background-color: lighten($grey, 10);
 
-  @include about;
+  @extend %about-section;
 }
 
 #testimonial {
-  padding: 50px 0;
+  @extend %wrapper-padding;
 
   blockquote {
     &:before {
@@ -208,7 +202,7 @@
 }
 
 #brands {
-  padding: 50px 0;
+  @extend %wrapper-padding;
   background-color: darken($white, 4);
 
   @include brands;

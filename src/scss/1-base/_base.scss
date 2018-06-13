@@ -4,6 +4,13 @@ html {
 }
 
 body {
-  font-family: "Lato", "Helvetica Neue", "Arial", "sans-serif";
+  font-family: $font-stack-lato;
   color: $dark-grey !important;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    color: $dark-red !important;
+  }
 }

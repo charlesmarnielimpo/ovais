@@ -7,7 +7,8 @@ var gulp = require('gulp'),
   imagemin = require('gulp-imagemin'),
   uglify = require('gulp-uglify'),
   cleanCSS = require('gulp-clean-css'),
-  pump = require('pump');
+  pump = require('pump'),
+  rename = require('gulp-rename');
 
 // --------------------------------
 // Paths
@@ -28,7 +29,8 @@ var scssSource = 'src/scss/**/*.scss',
 // Compile all SCSS files
 gulp.task('sass', function () {
   return gulp.src(scssSource)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({ outputStyle: 'uncompressed' }).on('error', sass.logError))
+    .pipe(rename({ basename: 'main' }))
     .pipe(gulp.dest(scssDest))
     .pipe(browserSync.reload({
       stream: true

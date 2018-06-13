@@ -1,18 +1,14 @@
-@import "0-helpers/_0-helpers";
-@import "1-base/_1-base";
-@import "3-layout/_3-layout";
-
 @include heading-underline;
 
 #about {
-  padding: 50px 0;
+  @extend %wrapper-padding;
   background-color: lighten($grey, 10);
 
-  @include about;
+  @extend %about-section;
 }
 
 #niche-studio {
-  padding: 50px 0;
+  @extend %wrapper-padding;
 
   li {
     list-style: none;
