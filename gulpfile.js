@@ -8,7 +8,8 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   cleanCSS = require('gulp-clean-css'),
   pump = require('pump'),
-  rename = require('gulp-rename');
+  rename = require('gulp-rename'),
+  plumber = require('gulp-plumber');
 
 // --------------------------------
 // Paths
@@ -29,6 +30,7 @@ var scssSource = 'src/scss/**/*.scss',
 // Compile all SCSS files
 gulp.task('sass', function () {
   return gulp.src(scssSource)
+    .pipe(plumber())
     .pipe(sass({ outputStyle: 'uncompressed' }).on('error', sass.logError))
     .pipe(rename({ basename: 'main' }))
     .pipe(gulp.dest(scssDest))

@@ -352,6 +352,9 @@ blockquote {
 #about {
   background-color: #e6e6e6; }
 
+#niche-studio ul {
+  padding-left: 0; }
+
 #niche-studio li {
   list-style: none; }
 
