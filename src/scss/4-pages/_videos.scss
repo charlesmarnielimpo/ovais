@@ -1,0 +1,6 @@
+@include heading-underline;
+
+.videos {
+  @extend %wrapper-padding;
+  background-color: whitesmoke;
+}

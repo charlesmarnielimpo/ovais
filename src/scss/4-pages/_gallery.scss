@@ -1,0 +1,10 @@
+@include heading-underline;
+
+.gallery {
+  @extend %wrapper-padding;
+  background-color: whitesmoke;
+
+  figure {
+    margin-bottom: 1.75rem;
+  }
+}

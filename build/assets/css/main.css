@@ -111,7 +111,7 @@ blockquote {
   #footer p.small {
     color: #b3b3b3; }
 
-#audio-reel, #about, #testimonial, #brands, #niche-studio {
+#audio-reel, #about, #testimonial, #brands, #niche-studio, .videos, .gallery {
   padding: 50px 0; }
 
 @media only screen and (max-width: 991px) {
@@ -352,12 +352,61 @@ blockquote {
 #about {
   background-color: #e6e6e6; }
 
+#niche-studio .headul::before, #niche-studio .headul::after {
+  margin: 0 !important; }
+
 #niche-studio ul {
   padding-left: 0; }
 
 #niche-studio li {
   list-style: none; }
 
+#niche-studio .box {
+  padding: 30px;
+  box-shadow: 0 3px 20px 0 rgba(204, 204, 204, 0.75); }
+
 @media only screen and (max-width: 767px) {
   #niche-studio .niche {
     margin-bottom: 40px; } }
+
+.headul {
+  margin: 30px auto 50px auto; }
+  .headul:before {
+    content: " ";
+    width: 220px;
+    height: 2px;
+    background-color: #b90504;
+    margin: 0 auto;
+    display: block; }
+  .headul:after {
+    margin: 0 auto;
+    content: " ";
+    width: 60px;
+    height: 6px;
+    background-color: #b90504;
+    display: block; }
+
+.videos {
+  background-color: whitesmoke; }
+
+.headul {
+  margin: 30px auto 50px auto; }
+  .headul:before {
+    content: " ";
+    width: 220px;
+    height: 2px;
+    background-color: #b90504;
+    margin: 0 auto;
+    display: block; }
+  .headul:after {
+    margin: 0 auto;
+    content: " ";
+    width: 60px;
+    height: 6px;
+    background-color: #b90504;
+    display: block; }
+
+.gallery {
+  background-color: whitesmoke; }
+  .gallery figure {
+    margin-bottom: 1.75rem; }
