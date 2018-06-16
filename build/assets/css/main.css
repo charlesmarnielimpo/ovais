@@ -459,3 +459,85 @@ blockquote {
       @media only screen and (max-width: 575px) {
         .gallery .load-more .btn-outline {
           width: 100%; } }
+
+.admin-body {
+  background-color: whitesmoke; }
+
+.admin-wrapper {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: 60px auto 40px;
+  grid-template-areas: "aside header" "aside section" "aside footer";
+  margin: 0 auto;
+  min-height: 100%;
+  height: 100vh; }
+  .admin-wrapper .admin-header,
+  .admin-wrapper .admin-aside,
+  .admin-wrapper .admin-footer {
+    background-color: #ffffff; }
+  .admin-wrapper .admin-header {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-area: header;
+    padding: 10px 30px;
+    border-bottom: 1px solid #e6e6e6; }
+    .admin-wrapper .admin-header i {
+      font-size: 1.25rem; }
+      .admin-wrapper .admin-header i:hover {
+        color: #b90504;
+        cursor: pointer; }
+    .admin-wrapper .admin-header .admin-name {
+      margin-left: auto; }
+  .admin-wrapper .admin-aside {
+    grid-area: aside;
+    min-height: 100%;
+    box-shadow: 1px 0 5px 0 rgba(204, 204, 204, 0.75);
+    z-index: 10; }
+    .admin-wrapper .admin-aside .admin-logo {
+      padding: 8px 0; }
+    .admin-wrapper .admin-aside .admin-navigation {
+      display: block;
+      position: relative; }
+    .admin-wrapper .admin-aside .navigation-title {
+      display: block;
+      text-transform: uppercase;
+      padding: 20px 10px 10px 15px;
+      letter-spacing: 5px;
+      font-family: "Poppins", "Helvetica Neue", Arial, sans-serif;
+      font-weight: 600; }
+    .admin-wrapper .admin-aside img {
+      width: 60px; }
+    .admin-wrapper .admin-aside ul {
+      padding-left: 0;
+      margin-bottom: 0; }
+    .admin-wrapper .admin-aside li {
+      list-style: none;
+      display: block; }
+    .admin-wrapper .admin-aside a {
+      display: block;
+      padding: 10px 10px 10px 20px;
+      text-transform: uppercase;
+      font-weight: 600; }
+      .admin-wrapper .admin-aside a:hover {
+        text-decoration: none;
+        background-color: #e6e6e6; }
+  .admin-wrapper .admin-section {
+    grid-area: section;
+    padding: 25px; }
+    .admin-wrapper .admin-section .box {
+      width: 100%;
+      min-height: 100%;
+      height: auto;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 5px 0 rgba(204, 204, 204, 0.75); }
+  .admin-wrapper .admin-footer {
+    grid-area: footer;
+    border-top: 1px solid #e6e6e6; }
+    .admin-wrapper .admin-footer p {
+      margin-bottom: 0;
+      padding: 10px 30px 10px 0; }
+    .admin-wrapper .admin-footer a {
+      color: #b90504; }
