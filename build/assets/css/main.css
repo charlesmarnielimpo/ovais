@@ -14,6 +14,21 @@ a {
   a:hover {
     color: #9f111b !important; }
 
+#loginModal .modal-header {
+  border-bottom: none;
+  padding: 1rem 1rem 0 1rem; }
+
+#loginModal .modal-footer {
+  border-top: none;
+  padding-top: 0; }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: #9f111b;
+  border-color: #9f111b;
+  color: #e6e6e6 !important; }
+
 h1,
 h2,
 h3,
@@ -103,6 +118,14 @@ blockquote {
     #header .header__nav--is-bottom .nav-link {
       margin: 0; } }
 
+#header .btn-primary {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px; }
+  @media only screen and (max-width: 991px) {
+    #header .btn-primary {
+      margin: 15px 0; } }
+
 #footer {
   padding: 50px 0;
   text-align: center;
@@ -110,6 +133,15 @@ blockquote {
   color: #f7f7f7; }
   #footer p.small {
     color: #b3b3b3; }
+
+.btn-primary, #header .btn-primary {
+  background-color: #b90504;
+  border-color: #b90504;
+  color: #ffffff; }
+  .btn-primary:hover, #header .btn-primary:hover {
+    background-color: #9f111b;
+    border-color: #9f111b;
+    color: #e6e6e6 !important; }
 
 #audio-reel, #about, #testimonial, #brands, #niche-studio, .videos, .gallery {
   padding: 50px 0; }
