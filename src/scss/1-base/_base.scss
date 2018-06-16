@@ -31,6 +31,10 @@ a {
   @extend %btn-primary;
 }
 
+.btn-outline {
+  @extend %btn-outline;
+}
+
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle{

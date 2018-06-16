@@ -8,3 +8,14 @@
     color: darken($white, 10) !important;
   }
 }
+
+%btn-outline {
+  background-color: transparent;
+  border: 2px solid $red;
+  color: $red;
+  &:hover {
+    background-color: $dark-red;
+    border-color: $dark-red;
+    color: darken($white, 10) !important;
+  }
+}

@@ -143,6 +143,15 @@ blockquote {
     border-color: #9f111b;
     color: #e6e6e6 !important; }
 
+.btn-outline, .gallery .load-more .btn-outline {
+  background-color: transparent;
+  border: 2px solid #b90504;
+  color: #b90504; }
+  .btn-outline:hover, .gallery .load-more .btn-outline:hover {
+    background-color: #9f111b;
+    border-color: #9f111b;
+    color: #e6e6e6 !important; }
+
 #audio-reel, #about, #testimonial, #brands, #niche-studio, .videos, .gallery {
   padding: 50px 0; }
 
@@ -442,3 +451,11 @@ blockquote {
   background-color: whitesmoke; }
   .gallery figure {
     margin-bottom: 1.75rem; }
+  .gallery .load-more {
+    margin-top: 20px; }
+    .gallery .load-more .btn-outline {
+      padding-right: 30px;
+      padding-left: 30px; }
+      @media only screen and (max-width: 575px) {
+        .gallery .load-more .btn-outline {
+          width: 100%; } }

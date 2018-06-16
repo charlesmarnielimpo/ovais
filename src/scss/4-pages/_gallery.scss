@@ -7,4 +7,18 @@
   figure {
     margin-bottom: 1.75rem;
   }
+
+  .load-more {
+    margin-top: 20px;
+
+    .btn-outline {
+      padding-right: 30px;
+      padding-left: 30px;
+      @extend %btn-outline;
+
+      @media only screen and (max-width: 575px) {
+        width: 100%;
+      }
+    }
+  }
 }
