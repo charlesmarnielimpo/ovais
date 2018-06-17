@@ -6,8 +6,8 @@
 @import '0-abstracts/_mixins';
 
 // 2. Vendors
-// @import
-//   'vendor/_normalize';
+// @import 'vendor/_normalize';
+@import '6-vendors/_datatable';
 
 // 3. Base stuff
 @import '1-base/_base';
