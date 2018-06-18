@@ -2,7 +2,7 @@
 
 #about {
   @extend %wrapper-padding;
-  background-color: lighten($grey, 10);
+  background-color: whitesmoke;
 
   @extend %about-section;
 }

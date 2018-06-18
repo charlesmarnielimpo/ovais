@@ -24,11 +24,17 @@
 @import '2-components/_wrapper-padding';
 @import '2-components/_about-section';
 @import '2-components/_social-links';
+@import '2-components/_blog-page';
+@import '2-components/_blog-box';
 
 // 6. Page-specific styles
 @import '4-pages/_home';
 @import '4-pages/_about';
-@import '4-pages/_videos';
 @import '4-pages/_gallery';
-@import '4-pages/_dashboard';
+@import '4-pages/_videos';
+@import '4-pages/_blog';
+@import '4-pages/_blog-single';
+
+// ADMIN PAGE
+@import '4-pages/_admin-video';
 // 7. Themes

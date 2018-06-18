@@ -42,6 +42,13 @@
     }
   }
 
+  .social-media__icon--google {
+    background-color: #e93f2e;
+    &:hover {
+      background-color: darken(#e93f2e, 10);
+    }
+  }
+
   i.fab {
     width: 25px;
     height: 20px;

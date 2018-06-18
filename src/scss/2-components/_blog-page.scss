@@ -1,0 +1,31 @@
+%blog-overlay {
+  background-color: rgba(0,0,0,0.85);
+  color: $white;
+  bottom: 5%;
+  left: 0;
+  position: absolute;
+}
+
+%blog-info {
+  display: inline-block;
+  font-family: $font-stack-poppins;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+%blog-category {
+  background-color: rgba(0,0,0,0.85);
+  color: $white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 5px 15px;
+}
+
+%blog-category-hover {
+  background-color: $dark-red;
+  color: $white;
+  cursor: pointer;
+}

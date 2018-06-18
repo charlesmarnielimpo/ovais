@@ -106,6 +106,15 @@
       background-color: $white;
       box-shadow: 0 1px 5px 0 rgba(204, 204, 204, 0.75);
     }
+
+    .action {
+      display: flex;
+      margin-bottom: 30px;
+
+      button {
+        margin-left: auto;
+      }
+    }
   }
 
   .admin-footer {
@@ -119,6 +128,21 @@
 
     a {
       color: $red;
+    }
+  }
+}
+
+.delete-question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    margin-bottom: 0;
+
+    span {
+      color: $red;
+      font-weight: bold;
     }
   }
 }

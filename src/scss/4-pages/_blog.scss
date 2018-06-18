@@ -1,0 +1,12 @@
+@include heading-underline;
+
+#blog {
+  @extend %wrapper-padding;
+  background-color: whitesmoke;
+
+  @extend .box-wrapper;
+
+  #pagination {
+    margin-top: 30px;
+  }
+}
