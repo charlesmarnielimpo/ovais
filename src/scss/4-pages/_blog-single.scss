@@ -114,17 +114,11 @@
       margin-bottom: 2.5rem;
 
       @media only screen and (max-width: 767px) {
-        font-size: 1.5rem;
         margin-bottom: 1rem;
       }
 
       @media only screen and (max-width: 480px) {
-        font-size: 1.25rem;
         margin-bottom: 1rem;
-      }
-
-      @media only screen and (max-width: 380px) {
-        font-size: 1rem !important;
       }
     }
   }

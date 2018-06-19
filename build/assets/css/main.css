@@ -66,17 +66,57 @@ blockquote {
   text-align: center;
   line-height: 1.2rem; }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 767px) {
   h1 {
     font-size: 2rem !important; } }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 575px) {
+  h1 {
+    font-size: 1.75rem !important; } }
+
+@media only screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.5rem !important; } }
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 767px) {
   h2 {
     font-size: 1.75rem !important; } }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 575px) {
+  h2 {
+    font-size: 1.5rem !important; } }
+
+@media only screen and (max-width: 320px) {
+  h2 {
+    font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 767px) {
   h3 {
-    font-size: 1.25rem; } }
+    font-size: 1.5rem !important; } }
+
+@media only screen and (max-width: 575px) {
+  h3 {
+    font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 320px) {
+  h3 {
+    font-size: 1.10rem !important; } }
+
+@media only screen and (max-width: 767px) {
+  h4 {
+    font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 575px) {
+  h4 {
+    font-size: 1.15rem !important; } }
+
+@media only screen and (max-width: 320px) {
+  h4 {
+    font-size: 1.10rem !important; } }
 
 blockquote {
   font-style: italic;
@@ -93,6 +133,11 @@ blockquote {
   min-height: 50px;
   height: 50px;
   padding: 10px 0 10px 0; }
+  @media only screen and (max-width: 767px) {
+    #header .header__nav--is-top {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto; } }
   @media only screen and (max-width: 532px) {
     #header .header__nav--is-top {
       display: none !important; } }
@@ -119,9 +164,9 @@ blockquote {
         padding: 0; } }
     @media only screen and (max-width: 767px) {
       #header .header__nav--is-top .contact {
-        margin-top: 10px !important;
+        margin-top: 0;
         margin-right: 0 !important;
-        padding: 0; } }
+        padding: 0.5rem; } }
     #header .header__nav--is-top .contact .contact__list:last-child {
       margin-left: 20px; }
       @media only screen and (max-width: 320px) {
@@ -207,6 +252,9 @@ blockquote {
 .social-media__link, #header .header__nav--is-top, #about {
   display: flex;
   padding-left: 0.5rem; }
+  @media only screen and (max-width: 767px) {
+    .social-media__link, #header .header__nav--is-top, #about {
+      padding-left: 0.5rem; } }
   .social-media__link .social-media__icon, #header .header__nav--is-top .social-media__icon, #about .social-media__icon {
     width: auto;
     padding: 3px;
@@ -227,14 +275,18 @@ blockquote {
     background-color: #0073b1; }
     .social-media__link .social-media__icon--linkedin:hover, #header .header__nav--is-top .social-media__icon--linkedin:hover, #about .social-media__icon--linkedin:hover {
       background-color: #00527e; }
-  .social-media__link .social-media__icon--instagram, #header .header__nav--is-top .social-media__icon--instagram, #about .social-media__icon--instagram {
-    background-color: #d10869; }
-    .social-media__link .social-media__icon--instagram:hover, #header .header__nav--is-top .social-media__icon--instagram:hover, #about .social-media__icon--instagram:hover {
-      background-color: #a00650; }
   .social-media__link .social-media__icon--google, #header .header__nav--is-top .social-media__icon--google, #about .social-media__icon--google {
     background-color: #e93f2e; }
     .social-media__link .social-media__icon--google:hover, #header .header__nav--is-top .social-media__icon--google:hover, #about .social-media__icon--google:hover {
       background-color: #ce2616; }
+  .social-media__link .social-media__icon--youtube, #header .header__nav--is-top .social-media__icon--youtube, #about .social-media__icon--youtube {
+    background-color: #ff0000; }
+    .social-media__link .social-media__icon--youtube:hover, #header .header__nav--is-top .social-media__icon--youtube:hover, #about .social-media__icon--youtube:hover {
+      background-color: #cc0000; }
+  .social-media__link .social-media__icon--imdb, #header .header__nav--is-top .social-media__icon--imdb, #about .social-media__icon--imdb {
+    background-color: #f5de50; }
+    .social-media__link .social-media__icon--imdb:hover, #header .header__nav--is-top .social-media__icon--imdb:hover, #about .social-media__icon--imdb:hover {
+      background-color: #f2d520; }
   .social-media__link i.fab, #header .header__nav--is-top i.fab, #about i.fab {
     width: 25px;
     height: 20px; }
@@ -301,6 +353,15 @@ blockquote {
 
 .headul {
   margin: 30px auto 50px auto; }
+  @media only screen and (max-width: 767px) {
+    .headul {
+      margin: 20px auto 40px auto; } }
+  @media only screen and (max-width: 575px) {
+    .headul {
+      margin: 15px auto 35px auto; } }
+  @media only screen and (max-width: 320px) {
+    .headul {
+      margin: 10px auto 30px auto; } }
   .headul:before {
     content: " ";
     width: 220px;
@@ -432,8 +493,18 @@ blockquote {
 #about {
   background-color: #e6e6e6; }
 
-#testimonial blockquote:before {
-  content: "\201C";
+#testimonial blockquote .testimonial:before {
+  content: "\201F ";
+  font-family: Georgia, serif;
+  font-weight: bold;
+  color: #b90504;
+  font-size: 2em;
+  line-height: .1em;
+  margin-right: 0;
+  vertical-align: -0.3em; }
+
+#testimonial blockquote .testimonial:after {
+  content: "\201D ";
   font-family: Georgia, serif;
   font-weight: bold;
   color: #b90504;
@@ -461,6 +532,15 @@ blockquote {
 
 .headul {
   margin: 30px auto 50px auto; }
+  @media only screen and (max-width: 767px) {
+    .headul {
+      margin: 20px auto 40px auto; } }
+  @media only screen and (max-width: 575px) {
+    .headul {
+      margin: 15px auto 35px auto; } }
+  @media only screen and (max-width: 320px) {
+    .headul {
+      margin: 10px auto 30px auto; } }
   .headul:before {
     content: " ";
     width: 220px;
@@ -498,6 +578,15 @@ blockquote {
 
 .headul {
   margin: 30px auto 50px auto; }
+  @media only screen and (max-width: 767px) {
+    .headul {
+      margin: 20px auto 40px auto; } }
+  @media only screen and (max-width: 575px) {
+    .headul {
+      margin: 15px auto 35px auto; } }
+  @media only screen and (max-width: 320px) {
+    .headul {
+      margin: 10px auto 30px auto; } }
   .headul:before {
     content: " ";
     width: 220px;
@@ -528,6 +617,15 @@ blockquote {
 
 .headul {
   margin: 30px auto 50px auto; }
+  @media only screen and (max-width: 767px) {
+    .headul {
+      margin: 20px auto 40px auto; } }
+  @media only screen and (max-width: 575px) {
+    .headul {
+      margin: 15px auto 35px auto; } }
+  @media only screen and (max-width: 320px) {
+    .headul {
+      margin: 10px auto 30px auto; } }
   .headul:before {
     content: " ";
     width: 220px;
@@ -548,6 +646,15 @@ blockquote {
 
 .headul {
   margin: 30px auto 50px auto; }
+  @media only screen and (max-width: 767px) {
+    .headul {
+      margin: 20px auto 40px auto; } }
+  @media only screen and (max-width: 575px) {
+    .headul {
+      margin: 15px auto 35px auto; } }
+  @media only screen and (max-width: 320px) {
+    .headul {
+      margin: 10px auto 30px auto; } }
   .headul:before {
     content: " ";
     width: 220px;
@@ -635,15 +742,10 @@ blockquote {
       margin-bottom: 2.5rem; }
       @media only screen and (max-width: 767px) {
         #blog-single .blog-overlay h2 {
-          font-size: 1.5rem;
           margin-bottom: 1rem; } }
       @media only screen and (max-width: 480px) {
         #blog-single .blog-overlay h2 {
-          font-size: 1.25rem;
           margin-bottom: 1rem; } }
-      @media only screen and (max-width: 380px) {
-        #blog-single .blog-overlay h2 {
-          font-size: 1rem !important; } }
   #blog-single .author-info {
     display: flex;
     justify-content: space-between;

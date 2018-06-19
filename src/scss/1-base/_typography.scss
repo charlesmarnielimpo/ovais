@@ -16,20 +16,62 @@ blockquote {
 }
 
 h1 {
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 767px) {
     font-size: 2rem !important;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.75rem !important;
+  }
+
+  @media only screen and (max-width: 425px) {
+    font-size: 1.5rem !important;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.25rem !important;
   }
 }
 
 h2 {
-  @media only screen and (max-width: 350px) {
+  @media only screen and (max-width: 767px) {
     font-size: 1.75rem !important;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.5rem !important;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.25rem !important;
   }
 }
 
 h3 {
-  @media only screen and (max-width: 350px) {
-    font-size: 1.25rem;
+  @media only screen and (max-width: 767px) {
+    font-size: 1.5rem !important;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.25rem !important;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.10rem !important;
+  }
+}
+
+h4 {
+  @media only screen and (max-width: 767px) {
+    font-size: 1.25rem !important;
+  }
+
+  @media only screen and (max-width: 575px) {
+    font-size: 1.15rem !important;
+  }
+
+  @media only screen and (max-width: 320px) {
+    font-size: 1.10rem !important;
   }
 }
 

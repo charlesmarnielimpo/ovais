@@ -12,6 +12,12 @@
     height: 50px;
     padding: 10px 0 10px 0;
 
+    @media only screen and (max-width: 767px) {
+      flex-direction: column;
+      align-items: flex-start;
+      height: auto;
+    }
+
     @media only screen and (max-width: 532px) {
       display: none !important;
     }

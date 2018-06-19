@@ -182,15 +182,27 @@
   @extend %wrapper-padding;
 
   blockquote {
-    &:before {
-      content: "\201C";
-      font-family: Georgia, serif;
-      font-weight: bold;
-      color: $red;
-      font-size: 2em;
-      line-height: .1em;
-      margin-right: 0;
-      vertical-align: -0.3em;
+    .testimonial {
+      &:before {
+        content: "\201F ";
+        font-family: Georgia, serif;
+        font-weight: bold;
+        color: $red;
+        font-size: 2em;
+        line-height: .1em;
+        margin-right: 0;
+        vertical-align: -0.3em;
+      }
+      &:after {
+        content: "\201D ";
+        font-family: Georgia, serif;
+        font-weight: bold;
+        color: $red;
+        font-size: 2em;
+        line-height: .1em;
+        margin-right: 0;
+        vertical-align: -0.3em;
+      }
     }
 
     .client-name {

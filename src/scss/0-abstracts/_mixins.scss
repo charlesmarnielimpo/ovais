@@ -24,9 +24,9 @@
     }
 
     @media only screen and (max-width: 767px) {
-      margin-top: 10px !important;
+      margin-top: 0;
       margin-right: 0 !important;
-      padding: 0;
+      padding: 0.5rem;
     }
 
     .contact__list {
@@ -44,6 +44,18 @@
 @mixin heading-underline {
   .headul {
     margin: 30px auto 50px auto;
+
+    @media only screen and (max-width: 767px) {
+      margin: 20px auto 40px auto;
+    }
+
+    @media only screen and (max-width: 575px) {
+      margin: 15px auto 35px auto;
+    }
+
+    @media only screen and (max-width: 320px) {
+      margin: 10px auto 30px auto;
+    }
 
     &:before {
       content: " ";

@@ -2,6 +2,10 @@
   display: flex;
   padding-left: 0.5rem;
 
+  @media only screen and (max-width: 767px) {
+    padding-left: 0.5rem;
+  }
+
   .social-media__icon {
     width: auto;
     padding: 3px;
@@ -35,17 +39,31 @@
     }
   }
 
-  .social-media__icon--instagram {
-    background-color: #d10869;
-    &:hover {
-      background-color: darken(#d10869, 10);
-    }
-  }
+  // .social-media__icon--instagram {
+  //   background-color: #d10869;
+  //   &:hover {
+  //     background-color: darken(#d10869, 10);
+  //   }
+  // }
 
   .social-media__icon--google {
     background-color: #e93f2e;
     &:hover {
       background-color: darken(#e93f2e, 10);
+    }
+  }
+
+  .social-media__icon--youtube {
+    background-color: #ff0000;
+    &:hover {
+      background-color: darken(#ff0000, 10);
+    }
+  }
+
+  .social-media__icon--imdb {
+    background-color: #f5de50;
+    &:hover {
+      background-color: darken(#f5de50, 10);
     }
   }
 
