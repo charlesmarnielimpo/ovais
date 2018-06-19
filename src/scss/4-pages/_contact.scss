@@ -1,0 +1,12 @@
+#contact {
+  @extend %wrapper-padding;
+  background-color: whitesmoke;
+
+  h1 {
+    margin-bottom: 20px;
+
+    span {
+      color: $red;
+    }
+  }
+}

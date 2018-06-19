@@ -4,7 +4,19 @@
   background-color: $dark-grey;
   color: darken($white, 3);
 
-  p.small {
-    color: darken($grey, 10);
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    &.small {
+      color: darken($grey, 10);
+    }
+
+    img {
+      width: 90px;
+    }
   }
 }

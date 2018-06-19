@@ -198,8 +198,12 @@ blockquote {
   text-align: center;
   background-color: #333333;
   color: #f7f7f7; }
+  #footer a:hover {
+    text-decoration: none; }
   #footer p.small {
     color: #b3b3b3; }
+  #footer p img {
+    width: 90px; }
 
 .btn-primary, #header .btn-primary {
   background-color: #b90504;
@@ -219,7 +223,7 @@ blockquote {
     border-color: #9f111b;
     color: #e6e6e6 !important; }
 
-#audio-reel, #about, #testimonial, #brands, #niche-studio, .gallery, .videos, #blog, #blog-single {
+#audio-reel, #about, #testimonial, #brands, #niche-studio, .gallery, .videos, #blog, #blog-single, #contact {
   padding: 50px 0; }
 
 @media only screen and (max-width: 991px) {
@@ -794,6 +798,13 @@ blockquote {
     margin: 25px 0;
     padding-top: 10px;
     border-top: 1px solid #e6e6e6; }
+
+#contact {
+  background-color: whitesmoke; }
+  #contact h1 {
+    margin-bottom: 20px; }
+    #contact h1 span {
+      color: #b90504; }
 
 .admin-body {
   background-color: whitesmoke; }
