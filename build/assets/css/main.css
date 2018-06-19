@@ -805,6 +805,11 @@ blockquote {
     margin-bottom: 20px; }
     #contact h1 span {
       color: #b90504; }
+  #contact .form-wrapper {
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px 0 rgba(204, 204, 204, 0.75);
+    padding: 40px 50px;
+    border-radius: 5px; }
 
 .admin-body {
   background-color: whitesmoke; }
