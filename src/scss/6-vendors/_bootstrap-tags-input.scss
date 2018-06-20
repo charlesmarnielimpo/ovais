@@ -1,0 +1,12 @@
+.bootstrap-tagsinput {
+  width: 100%;
+  height: 38px;
+  display: flex;
+  align-items: center;
+
+  .tag {
+    background-color: $red;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
