@@ -1,7 +1,3 @@
-@mixin wrapper-padding {
-  padding: 50px 25px;
-}
-
 @mixin contact {
   .contact {
     display: flex;
@@ -61,33 +57,14 @@
       content: " ";
       width: 220px;
       height: 2px;
-      background-color: $red;
-      margin: 0 auto;
-      display: block;
+      @extend %head-ul;
     }
 
     &:after {
-      margin: 0 auto;
       content: " ";
       width: 60px;
       height: 6px;
-      background-color: $red;
-      display: block;
-    }
-  }
-}
-
-@mixin brands {
-  .brand-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-
-    .image-wrapper {
-      max-width: 100px;
-      width: 100%;
-      margin: 10px 20px;
+      @extend %head-ul;
     }
   }
 }

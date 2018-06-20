@@ -1,4 +1,6 @@
-%about-section {
+#about {
+  @extend %background-default;
+
   img {
     @media only screen and (max-width: 991px) {
       margin-bottom: 20px;

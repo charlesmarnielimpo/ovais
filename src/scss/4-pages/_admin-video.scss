@@ -1,5 +1,6 @@
 .admin-body {
-  background-color: whitesmoke;
+  padding: 0;
+  @extend %background-default;
 }
 
 .admin-wrapper {

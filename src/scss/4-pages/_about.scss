@@ -1,14 +1,6 @@
-@include heading-underline;
-
-#about {
-  @extend %wrapper-padding;
-  background-color: whitesmoke;
-
-  @extend %about-section;
-}
-
 #niche-studio {
-  @extend %wrapper-padding;
+  background-color: $white;
+  @extend %background-default;
 
   .headul {
     &::before, &::after {

@@ -4,6 +4,7 @@
 @import '0-abstracts/_variables';
 @import '0-abstracts/_functions';
 @import '0-abstracts/_mixins';
+@import '0-abstracts/_placeholders';
 
 // 2. Vendors
 // @import 'vendor/_normalize';
@@ -13,7 +14,6 @@
 @import '1-base/_base';
 @import '1-base/_fonts';
 @import '1-base/_typography';
-@import '1-base/_helpers';
 
 // 4. Layout-related sections
 @import '3-layout/_header';
@@ -21,11 +21,11 @@
 
 // 5. Components
 @import '2-components/_button';
-@import '2-components/_wrapper-padding';
 @import '2-components/_about-section';
 @import '2-components/_social-links';
 @import '2-components/_blog-page';
 @import '2-components/_blog-box';
+@import '2-components/_brand-section';
 
 // 6. Page-specific styles
 @import '4-pages/_home';

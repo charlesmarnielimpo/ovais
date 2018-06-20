@@ -1,0 +1,16 @@
+#brands {
+  @extend %background-default;
+
+  .brand-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-wrapper {
+    max-width: 100px;
+    width: 100%;
+    margin: 10px 20px;
+  }
+}

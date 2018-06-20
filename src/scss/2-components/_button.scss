@@ -1,4 +1,4 @@
-%btn-primary {
+.btn-primary {
   background-color: $red;
   border-color: $red;
   color: $white;
@@ -9,7 +9,7 @@
   }
 }
 
-%btn-outline {
+.btn-outline {
   background-color: transparent;
   border: 2px solid $red;
   color: $red;
@@ -18,4 +18,12 @@
     border-color: $dark-red;
     color: darken($white, 10) !important;
   }
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle{
+  background-color: $dark-red;
+  border-color: $dark-red;
+  color: darken($white, 10) !important;
 }

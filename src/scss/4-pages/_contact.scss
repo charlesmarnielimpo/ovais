@@ -1,6 +1,5 @@
 #contact {
-  @extend %wrapper-padding;
-  background-color: whitesmoke;
+  @extend %background-default;
 
   h1 {
     margin-bottom: 20px;

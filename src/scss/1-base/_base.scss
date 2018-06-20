@@ -15,6 +15,8 @@ a {
   }
 }
 
+@include heading-underline;
+
 #loginModal {
   .modal-header {
     border-bottom: none;
@@ -25,20 +27,4 @@ a {
     border-top: none;
     padding-top: 0;
   }
-}
-
-.btn-primary {
-  @extend %btn-primary;
-}
-
-.btn-outline {
-  @extend %btn-outline;
-}
-
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active,
-.show>.btn-primary.dropdown-toggle{
-  background-color: $dark-red;
-  border-color: $dark-red;
-  color: darken($white, 10) !important;
 }
