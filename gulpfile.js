@@ -9,7 +9,8 @@ var gulp = require('gulp'),
   cleanCSS = require('gulp-clean-css'),
   pump = require('pump'),
   rename = require('gulp-rename'),
-  plumber = require('gulp-plumber');
+  plumber = require('gulp-plumber'),
+  autoprefixer = require('gulp-autoprefixer');
 
 // --------------------------------
 // Paths
@@ -30,9 +31,10 @@ var scssSource = 'src/scss/**/*.scss',
 // Compile all SCSS files
 gulp.task('sass', function () {
   return gulp.src(scssSource)
+    .pipe(autoprefixer())
     .pipe(plumber())
-    .pipe(sass({ outputStyle: 'uncompressed' }).on('error', sass.logError))
-    .pipe(rename({ basename: 'main' }))
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+    .pipe(rename({ basename: 'main', suffix: '.min' }))
     .pipe(gulp.dest(scssDest))
     .pipe(browserSync.reload({
       stream: true
