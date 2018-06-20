@@ -7,6 +7,12 @@
     flex-direction: column;
   }
 
+  .box {
+    &:first-child {
+      margin-right: 25px;
+    }
+  }
+
   .preview-image-wrapper {
     max-width: 296px;
     width: 296px;
