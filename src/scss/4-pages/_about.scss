@@ -8,17 +8,11 @@
     }
   }
 
-  ul {
-    padding-left: 0;
-  }
-
-  li {
-    list-style: none;
-  }
-
   .box {
     padding: 30px;
-    box-shadow: 0 3px 20px 0 rgba(204, 204, 204, 0.75);
+    &:hover {
+      box-shadow: 0 3px 20px 0 rgba(204, 204, 204, 0.75);
+    }
   }
 
   .niche {
